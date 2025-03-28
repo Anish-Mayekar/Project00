@@ -14,7 +14,7 @@ const FarmDetailsForm = ({ onClose }) => {
   const [selectedCrop, setSelectedCrop] = useState(null);
   const [formData, setFormData] = useState({
     village: "",
-    town: "",
+    states: "",
     district: "",
     coordinates: { lat: null, lng: null },
     soilType: "",
@@ -36,6 +36,7 @@ const FarmDetailsForm = ({ onClose }) => {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
+
     setFormData({ ...formData, [name]: value });
   };
 
@@ -62,7 +63,7 @@ const FarmDetailsForm = ({ onClose }) => {
   };
 
   const handleNextStep = () => {
-    if (formData.village && formData.district) {
+    if (formData.village && formData.states && formData.district) {
       setStep(2);
     } else {
       alert("Please fill in the required fields (Village and District)");
@@ -87,7 +88,7 @@ const FarmDetailsForm = ({ onClose }) => {
       });
 
       const data = await response.json();
-
+      console.log("Submitting formData:", data);
       if (response.ok) {
         // Show recommendations modal instead of closing
         setShowRecommendations(true);
@@ -150,12 +151,13 @@ const FarmDetailsForm = ({ onClose }) => {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-white">Town</label>
+                  <label className="block text-sm font-medium text-white">States*</label>
                   <input
                     type="text"
-                    name="town"
-                    value={formData.town}
+                    name="states"
+                    value={formData.states}
                     onChange={handleInputChange}
+                    required
                     className="mt-1 block w-full rounded-3xl h-12 px-4 bg-white text-black border-none shadow-sm"
                   />
                 </div>

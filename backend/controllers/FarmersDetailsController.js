@@ -11,7 +11,7 @@ const WEATHER_API_KEY = process.env.OPENWEATHERMAP_API_KEY;
 //         This will fetch data from weather Api and update and save in the database 
 exports.addFarm = async (req, res) => {
   try {
-    const { village, town, district, coordinates, soilType, landArea, budget } = req.body;
+    const { village, states, district, coordinates, soilType, landArea, budget } = req.body;
 
     // Check if coordinates are provided
     if (!coordinates || !coordinates.lat || !coordinates.lng) {
@@ -42,7 +42,7 @@ exports.addFarm = async (req, res) => {
     // Create a new farm entry in MongoDB
     const newFarm = new Farm({
       village,
-      town,
+      states,
       district,
       coordinates,
       soilType,

@@ -1,6 +1,6 @@
 const { ChatOpenAI } = require("@langchain/openai");
 const { GoogleGenerativeAI } = require("@google/generative-ai");
-
+const mongoose = require("mongoose");
 const SelectedCrop = require("../models/SelectedCrops");
 const FarmerInput = require("../models/FarmersDetails");
 const dotenv = require("dotenv");
@@ -249,5 +249,44 @@ exports.getAllSelectedCrops = async (req, res) => {
     res.status(200).json(selectedCrops);
   } catch (error) {
     res.status(500).json({ message: "Error fetching selected crops", error });
+  }
+};
+
+exports.getCropById = async (req, res) => {
+  try {
+    const { cropId } = req.params;
+
+    // Validate if the provided ID is a valid MongoDB ObjectId
+    if (!mongoose.Types.ObjectId.isValid(cropId)) {
+      return res.status(400).json({ 
+        success: false, 
+        message: "Invalid crop ID format" 
+      });
+    }
+
+    // Find the crop by its ID and populate the farm details
+    const crop = await SelectedCrop.findById(cropId).populate("farm"); 
+
+    // Check if crop exists
+    if (!crop) {
+      return res.status(404).json({ 
+        success: false, 
+        message: "Crop not found" 
+      });
+    }
+
+    // Return the crop data with populated farm details
+    return res.status(200).json({ 
+      success: true, 
+      data: crop 
+    });
+
+  } catch (error) {
+    console.error("Error fetching crop by ID:", error);
+    return res.status(500).json({ 
+      success: false, 
+      message: "Server error while fetching crop details",
+      error: error.message 
+    });
   }
 };

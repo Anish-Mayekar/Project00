@@ -1,24 +1,32 @@
 import React from "react";
 import farmerImg from "../assets/happy_farmer.jpg";
 import howdoesitworks from "../assets/how-does-it-works.png";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen flex flex-col">
       {/* Navbar */}
       <nav className="bg-white-600 text-black p-4">
-        <div className="container mx-auto flex justify-between items-center">
-          <div className="font-bold text-xl">AgriFarm</div>
-          <div className="flex space-x-4">
-            <button className="px-4 py-2 font-bold rounded-3xl hover:text-lime-900 transition">
-              Login
-            </button>
-            <button className="px-4 py-2 font-bold bg-lime-100 text-lime-600 rounded-3xl hover:bg-gray-100 transition">
-              Register
-            </button>
-          </div>
-        </div>
-      </nav>
+            <div className="container mx-auto flex justify-between items-center">
+                <div className="font-bold text-xl">AgriFarm</div>
+                <div className="flex space-x-4">
+                    <button 
+                        onClick={() => navigate("/login")} 
+                        className="px-4 py-2 font-bold rounded-3xl hover:text-lime-900 transition"
+                    >
+                        Login
+                    </button>
+                    <button 
+                        onClick={() => navigate("/signup")} 
+                        className="px-4 py-2 font-bold bg-lime-100 text-lime-600 rounded-3xl hover:bg-gray-100 transition"
+                    >
+                        Register
+                    </button>
+                </div>
+            </div>
+        </nav>
 
       {/* Hero Section */}
       <section className="bg-[#e3f0cd] py-12">

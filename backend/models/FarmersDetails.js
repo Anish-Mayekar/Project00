@@ -5,7 +5,7 @@ const farmSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  town: {
+  states: {
     type: String,
   },
   district: {

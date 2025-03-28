@@ -20,7 +20,7 @@ const Navbar = () => {
     {
       name: "Disease Detection",
       icon: <FaLeaf className="mr-2" />,
-      link: "#disease-detection"
+      link: "/disease-detection"
     },
     {
       name: "Government Schemes",
@@ -28,7 +28,7 @@ const Navbar = () => {
       link: "#government-schemes"
     },
     {
-      name: "Profit Maximization",
+      name: "News",
       icon: <FaChartLine className="mr-2" />,
       link: "#profit-maximization"
     },
@@ -40,7 +40,7 @@ const Navbar = () => {
     {
       name: "Community",
       icon: <FaUsers className="mr-2" />,
-      link: "#community"
+      link: "/forum"
     }
   ];
 

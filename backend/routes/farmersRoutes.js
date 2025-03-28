@@ -2,16 +2,16 @@ const express = require("express");
 const router = express.Router();
 const {
     addFarm,
-    getLatestFarmID
+    getLatestFarmID,
 } = require("../controllers/FarmersDetailsController");
 
 const {
     generateCropRecommendations,
     selectedCrop,
     getLatestUpdatedSelectedCropID,
-    getAllSelectedCrops
+    getAllSelectedCrops,
+    getCropById,
 } = require("../controllers/SelectedCropsController");
-
 
 // Route to add farmers input
 router.post("/addFarmerInput", addFarm);
@@ -30,5 +30,5 @@ router.get("/latest-recommendation-added-Id", getLatestUpdatedSelectedCropID);
 
 router.get("/allSelectedCrops", getAllSelectedCrops);
 
-
+router.get("/crop/:cropId", getCropById);
 module.exports = router;
