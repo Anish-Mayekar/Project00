@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const farmersRoutes = require("./routes/farmersRoutes");
+const preparationRoutes = require("./routes/PrepStage.routes");
 
 dotenv.config();
 
@@ -24,11 +25,11 @@ mongoose
 
 // Routes
 app.use("/farmers", farmersRoutes);
-
+app.use("/preperation", preparationRoutes)
 
 // Test route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to the Agrifarm API!" });
+  res.json({ message: "Welcome to the Assist API!" });
 });
 
 // Start the server

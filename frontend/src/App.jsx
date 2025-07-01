@@ -22,7 +22,10 @@ import Group from "./Components/Communication/Group";
 import GroupDetails from "./Components/Communication/GroupDetails";
 
 import DiseaseDetection from "./Components/DiseaseDetection";
-
+import FarmersAIChat from "./Components/AI_Assistance";
+import News from "./Components/News";
+import Market from "./Components/Market";
+import GovernmentWebsite from "./Components/GovernmentWebsite";
 function App() {
   return (
     
@@ -39,6 +42,10 @@ function App() {
           <Route path="/group" element={<Group />} />
           <Route path="/group/:groupId" element={<GroupDetails />} />
           <Route path="/disease-detection" element={<DiseaseDetection />} />
+          <Route path="/ai-assistance" element={<FarmersAIChat />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/market-places" element={<Market />} />
+          <Route path="/government-websites" element={<GovernmentWebsite />} />
 
           <Route path="/stage-1" element={<StageOne />} />
           <Route path="/stage-2" element={<StageTwo />} />

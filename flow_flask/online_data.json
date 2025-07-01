@@ -1,0 +1,6 @@
+{
+    "crop": "Maize",
+    "min_price_per_kg": 0.2,
+    "max_price_per_kg": 190.0,
+    "mode_price_per_kg": 25.0
+}

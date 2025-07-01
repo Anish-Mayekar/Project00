@@ -1,0 +1,502 @@
+{
+    "Achalpur": {
+        "average_min_price": 20.0,
+        "average_max_price": 21.5,
+        "average_modal_price": 20.75
+    },
+    "": {
+        "average_min_price": 20.75,
+        "average_max_price": 22.77,
+        "average_modal_price": 21.88
+    },
+    "Ahmednagar": {
+        "average_min_price": 21.0,
+        "average_max_price": 21.5,
+        "average_modal_price": 21.25
+    },
+    "Akluj": {
+        "average_min_price": 22.5,
+        "average_max_price": 22.5,
+        "average_modal_price": 22.5
+    },
+    "Akola": {
+        "average_min_price": 19.2,
+        "average_max_price": 19.2,
+        "average_modal_price": 19.2
+    },
+    "Amalner": {
+        "average_min_price": 17.11,
+        "average_max_price": 22.0,
+        "average_modal_price": 22.0
+    },
+    "Amarawati": {
+        "average_min_price": 21.5,
+        "average_max_price": 22.24,
+        "average_modal_price": 21.87
+    },
+    "Ambad (Vadigodri)": {
+        "average_min_price": 18.11,
+        "average_max_price": 19.11,
+        "average_modal_price": 18.11
+    },
+    "Baramati": {
+        "average_min_price": 22.25,
+        "average_max_price": 23.0,
+        "average_modal_price": 22.6
+    },
+    "Barshi": {
+        "average_min_price": 30.5,
+        "average_max_price": 30.5,
+        "average_modal_price": 30.5
+    },
+    "Barshi(Vairag)": {
+        "average_min_price": 21.0,
+        "average_max_price": 22.0,
+        "average_modal_price": 22.0
+    },
+    "Beed": {
+        "average_min_price": 21.5,
+        "average_max_price": 21.5,
+        "average_modal_price": 21.5
+    },
+    "Bhokar": {
+        "average_min_price": 21.0,
+        "average_max_price": 21.0,
+        "average_modal_price": 21.0
+    },
+    "Bhokardan": {
+        "average_min_price": 18.0,
+        "average_max_price": 21.5,
+        "average_modal_price": 21.0
+    },
+    "Bhokardan(Pimpalgaon Renu)": {
+        "average_min_price": 20.0,
+        "average_max_price": 21.0,
+        "average_modal_price": 20.5
+    },
+    "Buldhana": {
+        "average_min_price": 16.5,
+        "average_max_price": 22.0,
+        "average_modal_price": 20.0
+    },
+    "Chalisgaon": {
+        "average_min_price": 19.0,
+        "average_max_price": 22.24,
+        "average_modal_price": 22.05
+    },
+    "Chandur Bazar": {
+        "average_min_price": 20.0,
+        "average_max_price": 22.2,
+        "average_modal_price": 21.5
+    },
+    "Chandvad": {
+        "average_min_price": 23.0,
+        "average_max_price": 24.0,
+        "average_modal_price": 23.5
+    },
+    "Chattrapati Sambhajinagar": {
+        "average_min_price": 18.9,
+        "average_max_price": 21.0,
+        "average_modal_price": 19.95
+    },
+    "Chopada": {
+        "average_min_price": 18.0,
+        "average_max_price": 21.0,
+        "average_modal_price": 19.0
+    },
+    "Deoulgaon Raja": {
+        "average_min_price": 17.0,
+        "average_max_price": 17.0,
+        "average_modal_price": 17.0
+    },
+    "Devala": {
+        "average_min_price": 22.3,
+        "average_max_price": 22.45,
+        "average_modal_price": 22.4
+    },
+    "Dharangaon": {
+        "average_min_price": 18.5,
+        "average_max_price": 21.76,
+        "average_modal_price": 20.75
+    },
+    "Dharni": {
+        "average_min_price": 20.0,
+        "average_max_price": 21.0,
+        "average_modal_price": 20.5
+    },
+    "Dhule": {
+        "average_min_price": 17.05,
+        "average_max_price": 18.87,
+        "average_modal_price": 17.85
+    },
+    "Dondaicha": {
+        "average_min_price": 17.95,
+        "average_max_price": 21.75,
+        "average_modal_price": 20.0
+    },
+    "Dound": {
+        "average_min_price": 21.0,
+        "average_max_price": 21.0,
+        "average_modal_price": 21.0
+    },
+    "Dudhani": {
+        "average_min_price": 23.2,
+        "average_max_price": 23.2,
+        "average_modal_price": 23.2
+    },
+    "Fulmbri": {
+        "average_min_price": 22.5,
+        "average_max_price": 23.25,
+        "average_modal_price": 22.75
+    },
+    "Gevrai": {
+        "average_min_price": 18.0,
+        "average_max_price": 18.0,
+        "average_modal_price": 18.0
+    },
+    "Indapur": {
+        "average_min_price": 21.0,
+        "average_max_price": 22.0,
+        "average_modal_price": 22.0
+    },
+    "Jalana": {
+        "average_min_price": 14.75,
+        "average_max_price": 22.04,
+        "average_modal_price": 18.5
+    },
+    "Jalgaon": {
+        "average_min_price": 17.11,
+        "average_max_price": 17.11,
+        "average_modal_price": 17.11
+    },
+    "Jalgaon Jamod(Aasalgaon)": {
+        "average_min_price": 18.0,
+        "average_max_price": 20.0,
+        "average_modal_price": 19.0
+    },
+    "Jalgaon(Masawat)": {
+        "average_min_price": 18.5,
+        "average_max_price": 19.0,
+        "average_modal_price": 18.75
+    },
+    "Jamkhed": {
+        "average_min_price": 20.0,
+        "average_max_price": 21.0,
+        "average_modal_price": 20.5
+    },
+    "Jaykissan Krushi Uttpan Khajgi Bazar": {
+        "average_min_price": 17.85,
+        "average_max_price": 17.85,
+        "average_modal_price": 17.85
+    },
+    "Kada": {
+        "average_min_price": 22.3,
+        "average_max_price": 23.0,
+        "average_modal_price": 22.5
+    },
+    "Kalamb (Dharashiv)": {
+        "average_min_price": 22.51,
+        "average_max_price": 22.51,
+        "average_modal_price": 22.51
+    },
+    "Kalvan": {
+        "average_min_price": 22.51,
+        "average_max_price": 23.21,
+        "average_modal_price": 22.71
+    },
+    "Karjat": {
+        "average_min_price": 23.0,
+        "average_max_price": 23.0,
+        "average_modal_price": 23.0
+    },
+    "Karmala": {
+        "average_min_price": 22.25,
+        "average_max_price": 22.51,
+        "average_modal_price": 22.25
+    },
+    "Katol": {
+        "average_min_price": 23.41,
+        "average_max_price": 23.41,
+        "average_modal_price": 23.41
+    },
+    "Khamgaon": {
+        "average_min_price": 17.6,
+        "average_max_price": 18.11,
+        "average_modal_price": 17.86
+    },
+    "Kopargaon": {
+        "average_min_price": 20.01,
+        "average_max_price": 22.0,
+        "average_modal_price": 20.8
+    },
+    "Kurdwadi": {
+        "average_min_price": 20.0,
+        "average_max_price": 20.0,
+        "average_modal_price": 20.0
+    },
+    "Kurdwadi(Modnimb)": {
+        "average_min_price": 22.25,
+        "average_max_price": 23.21,
+        "average_modal_price": 22.5
+    },
+    "Lasalgaon": {
+        "average_min_price": 21.0,
+        "average_max_price": 22.0,
+        "average_modal_price": 21.5
+    },
+    "Lasalgaon(Niphad)": {
+        "average_min_price": 19.9,
+        "average_max_price": 19.9,
+        "average_modal_price": 19.9
+    },
+    "Lasalgaon(Vinchur)": {
+        "average_min_price": 22.25,
+        "average_max_price": 23.2,
+        "average_modal_price": 22.5
+    },
+    "Lasur Station": {
+        "average_min_price": 18.5,
+        "average_max_price": 20.5,
+        "average_modal_price": 19.0
+    },
+    "Majalgaon": {
+        "average_min_price": 18.51,
+        "average_max_price": 18.51,
+        "average_modal_price": 18.51
+    },
+    "Malegaon": {
+        "average_min_price": 22.25,
+        "average_max_price": 23.3,
+        "average_modal_price": 22.51
+    },
+    "Malkapur": {
+        "average_min_price": 17.75,
+        "average_max_price": 20.95,
+        "average_modal_price": 19.5
+    },
+    "Manmad": {
+        "average_min_price": 22.25,
+        "average_max_price": 22.68,
+        "average_modal_price": 22.4
+    },
+    "Mohol": {
+        "average_min_price": 20.0,
+        "average_max_price": 22.0,
+        "average_modal_price": 20.0
+    },
+    "Morshi": {
+        "average_min_price": 18.0,
+        "average_max_price": 20.0,
+        "average_modal_price": 19.0
+    },
+    "Mumbai": {
+        "average_min_price": 28.0,
+        "average_max_price": 39.0,
+        "average_modal_price": 35.0
+    },
+    "Murum": {
+        "average_min_price": 22.02,
+        "average_max_price": 22.02,
+        "average_modal_price": 22.02
+    },
+    "Nagpur": {
+        "average_min_price": 20.0,
+        "average_max_price": 22.0,
+        "average_modal_price": 21.5
+    },
+    "Nampur": {
+        "average_min_price": 19.0,
+        "average_max_price": 22.2,
+        "average_modal_price": 20.66
+    },
+    "Nandgaon": {
+        "average_min_price": 19.99,
+        "average_max_price": 22.24,
+        "average_modal_price": 22.0
+    },
+    "Nandura": {
+        "average_min_price": 18.9,
+        "average_max_price": 21.75,
+        "average_modal_price": 21.75
+    },
+    "Nandurbar": {
+        "average_min_price": 17.0,
+        "average_max_price": 22.16,
+        "average_modal_price": 19.5
+    },
+    "Om Chaitanya Multistate Agro Purpose CoOp Society": {
+        "average_min_price": 23.0,
+        "average_max_price": 23.0,
+        "average_modal_price": 23.0
+    },
+    "Pachora": {
+        "average_min_price": 17.5,
+        "average_max_price": 19.9,
+        "average_modal_price": 18.51
+    },
+    "Pachora(Bhadgaon)": {
+        "average_min_price": 17.5,
+        "average_max_price": 20.67,
+        "average_modal_price": 19.11
+    },
+    "Paithan": {
+        "average_min_price": 18.5,
+        "average_max_price": 18.5,
+        "average_modal_price": 18.5
+    },
+    "Paranda": {
+        "average_min_price": 20.5,
+        "average_max_price": 20.5,
+        "average_modal_price": 20.5
+    },
+    "Parola": {
+        "average_min_price": 22.0,
+        "average_max_price": 22.0,
+        "average_modal_price": 22.0
+    },
+    "Pune": {
+        "average_min_price": 25.0,
+        "average_max_price": 27.0,
+        "average_modal_price": 26.0
+    },
+    "Rahata": {
+        "average_min_price": 23.05,
+        "average_max_price": 23.05,
+        "average_modal_price": 23.05
+    },
+    "Rahuri": {
+        "average_min_price": 22.5,
+        "average_max_price": 22.5,
+        "average_modal_price": 22.5
+    },
+    "Rahuri(Vambori)": {
+        "average_min_price": 19.3,
+        "average_max_price": 19.3,
+        "average_modal_price": 19.3
+    },
+    "Raver": {
+        "average_min_price": 20.0,
+        "average_max_price": 20.0,
+        "average_modal_price": 20.0
+    },
+    "Sangli": {
+        "average_min_price": 23.5,
+        "average_max_price": 24.5,
+        "average_modal_price": 24.0
+    },
+    "Satana": {
+        "average_min_price": 21.0,
+        "average_max_price": 21.0,
+        "average_modal_price": 21.0
+    },
+    "Savner": {
+        "average_min_price": 21.25,
+        "average_max_price": 21.25,
+        "average_modal_price": 21.25
+    },
+    "Shahada": {
+        "average_min_price": 18.5,
+        "average_max_price": 18.5,
+        "average_modal_price": 18.5
+    },
+    "Shegaon": {
+        "average_min_price": 20.5,
+        "average_max_price": 20.5,
+        "average_modal_price": 20.5
+    },
+    "Shevgaon": {
+        "average_min_price": 20.0,
+        "average_max_price": 20.0,
+        "average_modal_price": 20.0
+    },
+    "Shirpur": {
+        "average_min_price": 19.5,
+        "average_max_price": 19.5,
+        "average_modal_price": 19.5
+    },
+    "Shirur": {
+        "average_min_price": 21.0,
+        "average_max_price": 21.5,
+        "average_modal_price": 21.5
+    },
+    "Shivsiddha Govind Producer Company Limited Sanchal": {
+        "average_min_price": 22.0,
+        "average_max_price": 23.05,
+        "average_modal_price": 22.76
+    },
+    "Shrigonda": {
+        "average_min_price": 23.0,
+        "average_max_price": 25.0,
+        "average_modal_price": 24.0
+    },
+    "Shrirampur": {
+        "average_min_price": 20.0,
+        "average_max_price": 21.0,
+        "average_modal_price": 20.5
+    },
+    "Sillod": {
+        "average_min_price": 21.0,
+        "average_max_price": 22.0,
+        "average_modal_price": 21.5
+    },
+    "Sillod(Bharadi)": {
+        "average_min_price": 21.75,
+        "average_max_price": 21.75,
+        "average_modal_price": 21.75
+    },
+    "Sindkhed Raja": {
+        "average_min_price": 17.0,
+        "average_max_price": 22.0,
+        "average_modal_price": 18.0
+    },
+    "Sinner": {
+        "average_min_price": 22.5,
+        "average_max_price": 24.0,
+        "average_modal_price": 23.5
+    },
+    "Solapur": {
+        "average_min_price": 22.0,
+        "average_max_price": 22.0,
+        "average_modal_price": 22.0
+    },
+    "Taloda": {
+        "average_min_price": 18.0,
+        "average_max_price": 20.25,
+        "average_modal_price": 19.0
+    },
+    "Tasgaon": {
+        "average_min_price": 22.35,
+        "average_max_price": 23.0,
+        "average_modal_price": 22.8
+    },
+    "Tuljapur": {
+        "average_min_price": 22.5,
+        "average_max_price": 23.51,
+        "average_modal_price": 23.0
+    },
+    "Umarga": {
+        "average_min_price": 22.01,
+        "average_max_price": 22.01,
+        "average_modal_price": 22.01
+    },
+    "Vaduj": {
+        "average_min_price": 23.5,
+        "average_max_price": 24.5,
+        "average_modal_price": 24.0
+    },
+    "Vaijpur": {
+        "average_min_price": 20.5,
+        "average_max_price": 22.24,
+        "average_modal_price": 21.7
+    },
+    "Yawal": {
+        "average_min_price": 15.5,
+        "average_max_price": 20.3,
+        "average_modal_price": 17.9
+    },
+    "Yeola": {
+        "average_min_price": 22.3,
+        "average_max_price": 23.11,
+        "average_modal_price": 22.31
+    }
+}

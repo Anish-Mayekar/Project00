@@ -188,7 +188,7 @@ const Group = () => {
         >
             <Navbar />
             <Container maxWidth="md">
-                <Typography variant="h4" sx={{ mt: 4, mb: 2, color: "white" }}>
+                <Typography variant="h4" sx={{ mt: 4, mb: 2, color: "black" }}>
                     FPOs (Groups)
                 </Typography>
 

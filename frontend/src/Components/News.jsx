@@ -1,0 +1,114 @@
+import React from "react";
+import Navbar from "./PreliminaryPhase/Navbar";
+const newsData = [
+  {
+    title:
+      "शेतकऱ्यांना एआयचे ज्ञान मिळावे म्हणून सरकार प्रयत्नशील : उपमुख्यमंत्री अजित पवार - Loksatta",
+    newspaper: "Loksatta",
+    link: "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOcl9kYWNEQWcxcGpkSzl2ejVVWlo0OUwxUDBvMjlzaV9iWWxINHJ0SFhiTEdjalZqV0VZTVpIZkVjZnQ1WXlyVzRrV2RkaFR1SnJNbHJtSWh6RFBDSXFXTkZpS25pMDI5MXJKM2QyQzNhMVpaWjhqaE1yQ1dGdmVfWFpBcWdaNEFsQ0pjSlRIdTBCQmtXUnZjM0QwZkc5NTVXX0JiQjRVYnMteUk4MV9YY1E0YTlPNDFBV3duWTJvWTlfclpKXzZqeGN4LUx4aFJKRmFYS2cwMFJFOGQ4blBzT1BqTzhCbnpnaVllejF30gH0AUFVX3lxTE1nWWhoYmUtSkVaYXF3bm1xLWphdWdSV2ZOZ2w1dFBPZ3BtVUJZQTltX2dKdWwwdEtSVThPeTU0SWcyTWNNTl9PQXFjRlNmQklfWGttUmp3ZGZIMnlUOU1NUzN2d2tHTzV6M1d5Ujkyc3JyalB5NGJEUUlrNkhadHNxN3ZicEVrU09mOGJZV3RJSzk3YmtjdFNZVkd4MnFXM2FfXzd1Q2FKa09KRmRmZFEyMzFBSWxFcHZGS09FQWZXdWhCT3NfWGtPTjhiMjVCMG5ZSm5TQmxLUDN4dDVFUWlzTk51enViRDlucnQtOXB2UTFTbGk?oc=5",
+    caption: "संपूर्ण लेख वाचा",
+  },
+  {
+    title:
+      "अंजनगाव पान पिंपरी, विड्याच्या पानांचे गाव: 850 शेतकरी घेतात उत्पादन, प्रामुख्याने बारी समाजातील शेतकऱ्यांच... - दिव्य मराठी",
+    newspaper: "दिव्य मराठी",
+    link: "https://news.google.com/rss/articles/CBMitgJBVV95cUxOSi1tMzQ2NFhveVJxZGhuaDJHSEtRc0ExcFNuSFFRUU5HNkFtc0JMNlM1Z2EyS0x3WG5nTGxnbEhrVXdfem5fUWhJN3MtWmQteUtzVi1lMlRYSDlJUFZ2aGFFNlRwYUl2eHp3dmppR1VtZFpVWG10Z1l1TlRzM1hRempUZjgzMm9xa1ZhdjQwUzExUVlZcXJUbWVTYVhLRFg5N0twMmFFcXJHZlFybk5sZGp3Mmk2WnVsSmZnTXdQcE1YTEJZanBDUThyYlFlR3k2dkZiTDNIc3JqRVJBQUdjRHhZY3BoS2k0Mzd5dUVMVDAyY1B5UGs3c1FINjdkRkRERDBvU24xa2lwRVVQa05nU0RyRVZVVWZOVjZadkZQZlJNVnBTRXhjNFVUY2xUT1NSX3VXNHFn0gG7AkFVX3lxTFBQemFHUlNXYXU0Zmk2LUJBWlpOVlRTWXExTGRILXpWSWdlMjhiYUZMbFBIVDFmb25XQ3hpVzhVbDRxYkdNWWNZc2ZsSU5sZ0FXbDAyRG9zemVnMVFQaEs2U0tUcmFjYTU3NmJDN2d2MzFTX2ZjV0FZVExsMUozMzZMdjhmYjNIUkh2YUtRUmdsZnBZZURhNmx3aEkwZWFURmZLTnlEMEV3eVAxVjR1Y0FzMkVIM255VVFscUpiNVdDMjd6X05oaU5oMzZuZ19rUk9kdk1EVk9LYjBHTllJNlNKY0VnQV9UYmRoUFJyNEwzbTRtS1EzeW9xR2c1RXlCMHVRbWEwaUpZMHNyem5lWXpBQ09IS1hpZkJ3WjZnVGxsU1Y3QWZRWUNyLUNUYmpSTXhXVkU0RTFlVk5JVQ?oc=5",
+    caption: "संपूर्ण लेख वाचा",
+  },
+  {
+    title:
+      "नागपूरचा संत्रा देशात फेमस, पण बागांवर कुऱ्हाड चालवण्याची वेळ विषारी धुराने - ABP  Majha",
+    newspaper: "ABP  Majha",
+    link: "https://news.google.com/rss/articles/CBMigwJBVV95cUxNYndHaDNkY1pNcUNna0FyNkJfWWtBYl9tU2Y2OXc3cy1QOEx2VnFqUTRGcnZmcjFNdUlKdnI0eGh3ZmN2NkpXR2tKamc4RzZVNXlWQUhtbzhuMUlMSlV2NDl1dDY0TWZqSHh0MFJ1eDRiR00tc0p4OUxIU2o3OXlnc0dQM0tTZjR3eUhVb1EtSUwtNzF1RElTczNpZzFyOWkxclpOZGNZcnVEbFo1bG00d0x6MmoyWEVidTU0dHptRDlrV0lYbUNya1Nta29MN2MyV1k4Ui16dm1CVWlGS2ZGeE1LbTB5NjBDbDFTLW5RSzVOQnZLZDBHazJLRkFtbnVKdEo40gGIAkFVX3lxTFBBMUJjbFc2UjZLUzFDc2E2X210QVNQSXhGaTU0U3M5eUNoVDhFUGxFMi02MXpzalZOUHBsVmVUZklYdVd6dThvYzBTMXBKVFF0NFI0WThnNzI1dEJGRGVMVi1wN2V6MUJFUkJHUmhEYUpBQy14OVFVX1hxbUpYYk5XRlMwR3ZhTmIwcUdsU3U0SnpmQnNTeFN5YzBfeThyb3ItcVRTa2VCZTg3ZFlsRDlrRmVBcWdzREc2R3o0RXR1QzdKdDJlc0NOaVpyLXJKZmtoZWVFVTYxOW9XbTJLczE1SmZ6TDZJNVhiMnM1aURLVmdpdGdSUTVzbk1vd3F5bXI2TXV2WjE1cg?oc=5",
+    caption: "संपूर्ण लेख वाचा",
+  },
+  {
+    title:
+      "Nashik Fraud: कृषीमंत्र्यांच्याच जिल्ह्यात १८१ बांगलादेशींनी घेतला पीएम किसान योजनेचा लाभ; साम टीव्हीच्या बातमीनंतर पर्दाफाश - Saam TV",
+    newspaper: "Saam TV",
+    link: "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQVWVQb0J3SlZGYXVVQUJLVXZJZjExV3RKRnRlNUU0SWdlbXVNYTFvY2JTNW5Gb2xYLXd5RmpKVmpWbENTbUtGS243M1hDaW9BbDM4dVA3SWtZUV92NUNEY0wtcnA4a1JjdEVHeWJBUGhRaTFSOWZfRHE5NHFhY29OLXA1SEd4OW9uaW82eVNQcjdjZWJXYXpDY2NkLVdUdWtPOWhvdl9nNVFkbnVLcHdXTU16UmlrNmg1MjNFZ1FEcVVDOFNudWRQWnNCbGFrUmlvaFJjd2k2d0ZtNGs0QWVvYnpoUkY?oc=5",
+    caption: "संपूर्ण लेख वाचा",
+  },
+  {
+    title:
+      "PM Kisan Scheme : बांगलादेशी घेत होते पीएम-किसान योजनेचा लाभ - Prahaar",
+    newspaper: "Prahaar",
+    link: "https://news.google.com/rss/articles/CBMilgFBVV95cUxQa09wNkRDSXRUa3ZBS1FnVnE2Q29vUzhoOG10Y3hVcWl4RzltWHpyeC1yYUlFN0stTmtsaTFDN1lwa0xMT2hybVQ0ZkZqalN6X1l0c3ZtaDViaWkzMTZSaTFhbTJNVHdjcEJSbzdZWmNucTdvazJoQ3AyMnMtVWVMMmZDekpYYU9KU0JZSVRzNjMtWmJBbWfSAZsBQVVfeXFMTXNjMmNsWXhraVhGSFhDM3U5NGFKZ2JzR0JCUkFHVGhXOFpOQnhWdGRrVm9OcjctbWRPMElzQjJuNjhvOE1qNmx4X2lWOUtORTVsWVlpZTlWZWh1b09jMkg1Qk5xRVlGQmJ0Rjh0Ri05amQxOFV2X2h1M1E1YlpGeDlleU4yZk1rQUlBbWM4SUdRUURUOG5NbXg1Ymc?oc=5",
+    caption: "संपूर्ण लेख वाचा",
+  },
+  {
+    title:
+      "संतप्त शेतकऱ्यांनी नोटा उधळत नोंदवला निषेध, बीडच्या पाटोदा पंचायत समितीत काय घडलं? - महाराष्ट्र टाइम्स (Maharashtra Times)",
+    newspaper: "महाराष्ट्र टाइम्स (Maharashtra Times)",
+    link: "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNWUY2UW05Wkl2aW1TcjdyZy1hOTJFdE44NFZYSHc2UVk0U2JFTXE0N0lYampkM09lbnVxUVluRFVvQWNnYWtmWGhlUkdKMXhwWVpWMjlrTGtDa1BJazlEMmJSak1td1pjcmZNQjV2bVNKeE5CWGxWVjZnekNGc2ViVkF2d0YwdVJaaDRacGk4SEF5cEt1N0FKUktzXzljTzEzYjgxd2VUUjVncFhsU1ZEQlR1VFF6bTQ4UHJqUnh0dHA3YlpfSGhSRno3RkM1eVo4R2pZcjh1Q1loUXg1STJPOFNDWTFOVTZ6RGczS3piMm9zNFJVUW5lNkZ2enDSAYICQVVfeXFMTlVoVDlCUldrcDMxUVI3RG9iRWFtT3JhOGpOYVRNdmNGN0VLUDhfMEFUUXhGek1QSjE2anNPek01N3JhX1NsVDhOeWxKbEoxYVVGeUptQlVhRXBXbXUyMTBjaHZPMlJ2aUd1NlUtWTBWbk1CSFcwUWg3cXNtTkRmMTEzUXA3X3F5dE9jZ29rZ2NKZjJBQnFJN2JVb21mRlR2R2ZVbE1raHZyNmRwYmtkX1c3UVNqUGIxaERmVGZyZDREV0VMTHMyOVN1emtDZkctbWpRZ2U4YnZPOVpOWTQ1MnZZcmZNaXptUVBvUVRYN0diNmdxWHcxM3JOXzJiMWdGM0pB?oc=5",
+    caption: "संपूर्ण लेख वाचा",
+  },
+  {
+    title:
+      "पुतळ्याचे नूतनीकरण अनावरण समारंभ व शेतकरी मेळाव्यासाठी अजित पवार बारामती दौऱ्यावर - Loksatta",
+    newspaper: "Loksatta",
+    link: "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOTXIyUUZvX0pIX3FrVVV4Z2xQNV9HUV9xVmlLbHo3UTU3RnJkSHN1bGpJaGhqaFg0amg0V3FHbm9QOUN5NXB0WUd3QXV5SWJmZWxWbU80SFVoWXgzYkdtR2dVR3A3MlNtX3VWVXlDcFNXR1FCZ3ZBQlN0WTVmdEhGd2dZbGlqcFN2ZFRNTnlmV3RNcWxPZUd5X2h6WWxRWFBxYUFEQW9wMlJTa0RTaTQwVlMtNGFnWlBrSDFra3RwX25pdVFUQllyVktKeHVHUm5qZ3BUUjFPbHJ4WFdSNkt2Q0IzZGJHTFNi0gHvAUFVX3lxTE0xbW5YTm5BUHlEVUxUNTRUMWc0eWMxcTJfR0Q4QVY5aHFfRVdFTUZUbXYwTjhOVzFURFc5ZnRUeDlORmNRQzlhanp4aHBXSWNzWk4wTHk5RENCQVdHTFJSLVZVcWpsU1ZHUGVGcDZqd3VpbUFxbVNUZFJOZDU4YXpLMVdIbUMzVUFXRWpTM0I0cU1zVzJjLVI2YjhmYXN1ZXd3WkJiUjFMOFI5cUdSdjFWaFF5MzNfVGpZMVZ2VjRfdWtfcm5zVF9MVG1Ca29CX3dfNUFMVGt5VHFud0p4MDFxNWpLRE1YSHpGZEtQOTFn?oc=5",
+    caption: "संपूर्ण लेख वाचा",
+  },
+  {
+    title:
+      "Namo Shetkari : लाखो शेतकऱ्यांसाठी गुड न्यूज, नमो शेतकरीचे 2000 लवकरच खात्यात येणार, 1642 कोटी - ABP  Majha",
+    newspaper: "ABP  Majha",
+    link: "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPYm1LeWU5OW1lOElWS1BhbFF2dy1pSHZCc2ZRbGZoRDBaRWxiaHlRRGRjSS0wZkJiQ3FtTHJhQ0FZam1uV0VOcGJtREw2Nmpic3d5alF5cmJibzRyQTMzNW16d1ItWlUtUXp6ZGlweTFKYXdpQzlaQTBGQXdMQUdicWlTWnhQOTlkanZfUnNfSkxTaWZJX3IxbEpGQy1CYUNaMVRJX0pGMUZtUUFMR2MzM2NiY2NBdlh6Z0g5MGpCcWc4SUtQYXpWNzRlUVBuV0QtVkVSbmFJd2x4YXhuVWU1VWpGX2jSAeoBQVVfeXFMTUJscFY4VUVHRzFXc09yaDEtS0VnNkV1eHdENE5sdUMyTXNxM2gydDVtcDI2bnJwdFpZMkFPc1NIdk1lMGZ2UFNOZW8yc054SEl2U1dGZWpncWQ2VWxyaVJJTWJBUjdOc2R1MWpqV1hiZGVsTEVkZHFDSXMwVkoyb24wYkozbWx0NXJjbjRVa1BnSk1wNzBEQmRQZWt4YXhGNk9Bb243c1FiSTAzUTJGY1lfVm94Y2VWSDBHZmgwRUdpcXV2OGE2NWdmNzRqM203U19SRXFyVDhqamVsNFVOcWk0TGFwVVVfYU93?oc=5",
+    caption: "संपूर्ण लेख वाचा",
+  },
+  {
+    title:
+      "Namo Nidhi 6th Installment : अखेर 'नमो शेतकरी महासन्मान'च्या सहाव्या हप्त्यासाठी १ हजार ६४२ कोटी रुपये निधीला मान्यता - Agrowon",
+    newspaper: "Agrowon",
+    link: "https://news.google.com/rss/articles/CBMivwFBVV95cUxNT0xUTjRXX19ZSVlWM01fbWJ2Y1ZsaUtUR3h5UzdwN09YV01BVE85RjRNTTR6ZGdzdHFOckRJc29nVHNnNGVSMG1HS1ZIN19CUnhMSHoyZVZjd1c5cjZKcDFMQ0xUUjBqTVVkUDBBY29CZk90aU5PRFBXMVUwcVRPT0tCRFA4QnZpMWN1OXlkeGR2U0JuZ2dPbEk4STI3eWhZZkpROVhSTTh5NnZBMlBRYWdpR1VTb2Y0RUlUU0tpRdIBzAFBVV95cUxQZEU3TW5OMUpWUVZtQ0Jac2xzd1NER3Zjc0JyY19QY3lwYkNsNDczMUdtYy1lTVVQQmVhZmowamVrMkZLX3JzWVVLRzY5MS1UeFNvVVo0R2tFd2VNajllZXMzd3NTOG9zTFlCV2VkMXhHMUQwVGdlNVVoZXExOUZFVkItSFAtTUJnUk1GUnN6NUxvdm4zNHYtTmphdUNuX0NhQXE0U3hEckozX09rd2l4ZWNNdW1nYWRiNkE2UmFHa0N2aWZpeXJmcVRyY2w?oc=5",
+    caption: "संपूर्ण लेख वाचा",
+  },
+  {
+    title:
+      "लोणी येथे म्हशींच्या बाजाराला झाली सुरुवात: बाजारात शेतकऱ्यांची फसणवणूक होणार नाही - दिव्य मराठी",
+    newspaper: "दिव्य मराठी",
+    link: "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNeHI2LUtnS2RXOWNmc2dQRTJvcXc1WWJ3bmU0ZG5udmNDRHZ1ZV9FdkxEaG5memVLeWl6SFRxanBqTm9qTVF3NmllTWU2alN5MWY4MzFGUndDcmpiVEVWZTVSRWl5U1d3TElMcFQwVEZPNmFocWV1NVFTNXU0SG02WWtyVGd2YWZtY1dXdlJkOXV0YzhabV9teFhRVC1WN1hxdWgxbHBBakhCbVdkVkdOa1pmQmdRTGtpSXZzOXZVeXZoSTduMjJERVV1SmUxYVZFUVBIY3NqejExcWlBbHVQeVVTcW4tM1Z60gHuAUFVX3lxTE9jdVZGbmdibkFtZzA1b2xZbWRwNGpTQVRPa1MzTWhFZ2h0eFhOSXR3c2JNTTVPTTBVYm5zR2FtOHFjaVZmM3htaUgxdjJxaDNpNkI3amVIeG5nVHl6aFh4RUoxYVpKbkNkSUsxbXQwdGhZX3BMRVhmaW0yakcxOGVoVXFjMVVBWWNITkxFQ1VjdmFJV2J5Q0RsWWVIVVJ1N040a2taaXJ1SnBtSUtrZ09EYUdlTEtiWTVZUTYzRUVEQ2o3RVoycWhFSE9WT3dEMlhNT1h0ZWJpbFhPblVtS2l0Y0huWXl2TE9fQUNobEE?oc=5",
+    caption: "संपूर्ण लेख वाचा",
+  },
+];
+
+// const Navbar = () => (
+//   <nav className="bg-blue-600 text-white p-4 shadow-md">
+//     <div className="container mx-auto text-lg font-semibold">News Updates</div>
+//   </nav>
+// );
+
+const NewsCard = ({ article }) => (
+  <div className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition duration-300">
+    <h2 className="text-lg font-semibold text-gray-800">{article.title}</h2>
+    <p className="text-sm text-gray-500">{article.newspaper}</p>
+    <a
+      href={article.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-500 hover:underline mt-2 block"
+    >
+      {article.caption}
+    </a>
+  </div>
+);
+
+const NewsContainer = () => (
+  <div className="p-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      {newsData.map((article, index) => (
+        <NewsCard key={index} article={article} />
+      ))}
+    </div>
+  </div>
+);
+
+const News = () => (
+  <div>
+    <Navbar />
+    <NewsContainer />
+  </div>
+);
+
+export default News;

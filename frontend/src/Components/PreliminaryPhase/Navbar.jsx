@@ -6,7 +6,8 @@ import {
   FaStore, 
   FaUsers, 
   FaBars, 
-  FaTimes 
+  FaTimes,
+  FaRobot 
 } from "react-icons/fa";
 
 const Navbar = () => {
@@ -25,22 +26,27 @@ const Navbar = () => {
     {
       name: "Government Schemes",
       icon: <FaLandmark className="mr-2" />,
-      link: "#government-schemes"
+      link: "/government-websites"
     },
     {
       name: "News",
       icon: <FaChartLine className="mr-2" />,
-      link: "#profit-maximization"
+      link: "/news"
     },
     {
       name: "Market Places",
       icon: <FaStore className="mr-2" />,
-      link: "#market-places"
+      link: "/market-places"
     },
     {
       name: "Community",
       icon: <FaUsers className="mr-2" />,
       link: "/forum"
+    },
+    {
+      name: "AI Assistance",
+      icon: <FaRobot className="mr-2" />,
+      link: "/ai-assistance"
     }
   ];
 
@@ -50,7 +56,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <span className="text-white font-bold text-xl">AgriFarm</span>
+            <span className="text-white font-bold text-xl">AgriAssist</span>
           </div>
           
           {/* Desktop menu */}

@@ -10,7 +10,7 @@ const HomePage = () => {
       {/* Navbar */}
       <nav className="bg-white-600 text-black p-4">
             <div className="container mx-auto flex justify-between items-center">
-                <div className="font-bold text-xl">AgriFarm</div>
+                <div className="font-bold text-xl">AgriAssist</div>
                 <div className="flex space-x-4">
                     <button 
                         onClick={() => navigate("/login")} 
