@@ -203,7 +203,7 @@ CORS(app, origins=["http://localhost:5173"])
   # Enable CORS for frontend-backend communication
 
 # MongoDB Atlas Connection
-MONGO_URI = "mongodb+srv://workrelatedV1:workrelated6375@cluster0.wkeoz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+MONGO_URI = ""
 client = MongoClient(MONGO_URI)
 db = client["community_platform"]
 db1 = client["crop_disease_db"]  # Database name
